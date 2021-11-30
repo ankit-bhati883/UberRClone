@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:id="@+id/driver_info_layout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/car_display"
+                    android:layout_marginLeft="50dp"/>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/img_driver"
+                    android:src="@drawable/ic_baseline_account_circle_24"/>
+
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_car_type"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Haundai Tyote"
+                    android:fontFamily="@font/uber_move"
+                    android:textColor="#737373"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_car_number"
+                    android:layout_gravity="center_horizontal"
+                    android:text="ABC 123"
+                    android:fontFamily="@font/uber_move_bold"
+                    android:textColor="#737373"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_driver_name"
+                android:gravity="center_vertical"
+                android:text="Ankit Bhati"
+                android:fontFamily="@font/uber_move_bold"
+                android:textColor="#737373"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="■"
+                android:textColor="#737373"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_rating"
+                android:gravity="center_vertical"
+                android:text="4.83"
+                android:drawableRight="@drawable/ic_baseline_star_full_24"
+                android:fontFamily="@font/uber_move_bold"
+                android:textColor="#737373"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="■"
+                android:textColor="#737373"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_foregin_language"
+                android:gravity="center_vertical"
+                android:text="Knows English"
+                android:fontFamily="@font/uber_move"
+                android:textColor="#737373"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:weightSum="12">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:id="@+id/img_call_driver"
+                android:src="@drawable/ic_baseline_phone_24"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_note"
+                android:hint="Any pickup notes?"
+                android:inputType="textMultiLine"
+                android:layout_weight="10"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/img_call_driver"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_send_note"
+                android:layout_weight="1"
+                android:src="@drawable/ic_baseline_wb_sunny_24"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

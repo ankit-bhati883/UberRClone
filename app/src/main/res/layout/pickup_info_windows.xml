@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/txt_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meet Driver Here"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/pickup_rounded_corner"/>
+
+    <View
+        android:layout_gravity="center_horizontal"
+        android:layout_width="1dp"
+        android:layout_height="2dp"
+        android:background="@color/blue_uber"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pickup_icon"/>
+
+
+</LinearLayout>
