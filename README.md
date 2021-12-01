@@ -6,7 +6,8 @@
 # INTRODUCTION
 
  A Uber like kotlin based Android app ,In this app User can see available driver on map just like uber app. 
- It allow user to book a Real time  available cab on UberClone Driver app and make Travelling Easy.
+ It allow user to book a Real time  available cab on UberClone Driver app and subscribe Drivers car on google map and make Travelling Easy.
+ It will work with Uber Driver Clone which can be found
 
  # Preview of the app-:
 <p align="center">
